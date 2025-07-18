@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LuxeLane</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="./assets/img/luxelane.png" rel="icon">
+  <link href="./assets/img/luxelane.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename" style="color: rgb(183, 153, 115);">LuxeLane</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul >
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#beauty">Beauty</a></li>
+          <li><a href="#acessories">Acessories</a></li>
+          <li><a href="#women">Women</a></li>
+          <li><a href="#men">Men</a></li>
+          <li class="dropdown"><a href="#"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Shop Now</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1 style="color: rgb(245, 233, 218);">From Runway to Doorway</h1>
+            <p>Curating Luxury Fashion, One Click at a Time.</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Shop Now</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="./assets/img/luxe hero img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="./assets/img/clients/rare beauty.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/lv logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/channel-removebg-preview.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/armani.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ysl.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/burbery.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/prada.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ysl.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              At LuxeLane, we believe fashion is more than clothing—it’s an expression of individuality and sophistication. Our mission is to bring luxury closer to you by curating a premium selection of designer apparel, accessories, and timeless pieces from globally renowned brands. Each item in our collection is handpicked to ensure the highest standards of quality, elegance, and style. With a seamless shopping experience and exclusive collections, LuxeLane is your destination for redefining modern luxury, one click at a time.
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>At LuxeLane, luxury meets convenience. We curate an exclusive range of designer apparel and accessories from globally recognized brands, ensuring every piece reflects elegance and quality. Our mission is to make luxury fashion accessible with a seamless shopping experience and premium customer care. </p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Our Story of Elegance </span></h3>
+              <p>
+                We go beyond trends to bring you timeless luxury. Every product you find here is 100% authentic, sourced from trusted designers and fashion houses worldwide. With secure payments, fast delivery, and exceptional customer service, we ensure a premium shopping experience at every step.
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span> Are all LuxeLane products authentic?</h3>
+                <div class="faq-content">
+                  <p>Yes! We guarantee 100% authenticity on all our products. Each item is sourced directly from trusted designers and official brand partners.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span>Do you offer international shipping?</h3>
+                <div class="faq-content">
+                  <p>Absolutely. LuxeLane ships worldwide with secure and reliable delivery options.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span>What is your return policy?</h3>
+                <div class="faq-content">
+                  <p>We offer a hassle-free return policy within 14 days of delivery, provided the item is unused and in its original packaging.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/why_us-removebg-preview.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Premium Services</h2>
+        <p>Experience luxury with exceptional services designed to make your shopping seamless and stylish."</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-activity icon"></i></div> -->
+              <h4><a href="" class="stretched-link">🛡️ Authentic Products </a></h4>
+              <p>Every LuxeLane product is 100% genuine, sourced from top designers and official brand partners.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div> -->
+              <h4><a href="" class="stretched-link">🌍 Worldwide Shipping </a></h4>
+              <p>Shop globally and enjoy fast, secure delivery to your doorstep, wherever you are.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-calendar4-week icon"></i></div> -->
+              <h4><a href="" class="stretched-link">🎧 24/7 Customer Support  </a></h4>
+              <p>Our dedicated support team is here around the clock to assist you with any queries.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!-- <div class="icon"><i class="bi bi-broadcast icon"></i></div> -->
+              <h4><a href="" class="stretched-link">🔄 Easy Returns </a></h4>
+              <p>Enjoy hassle-free returns and refunds within 14 days of purchase.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Work Process Section -->
+    <section id="work-process" class="work-process section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Categories</h2>
+        <p>Luxury in Every Touch</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/fashion1.jpg" alt="Step 1" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">01</div>
+                <h3> Fashion Categories</h3>
+                <p>Discover a world of elegance with LuxeLane’s exclusive fashion collection. From timeless classics to modern trends, our curated selection of women’s and men’s apparel brings luxury to your wardrobe. </p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Women’s Wear</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Men’s Wear</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Footwear</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/beauty.jpg" alt="Step 2" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">02</div>
+                <h3> Beauty Categories</h3>
+                <p>Indulge in the finest skincare, makeup, and fragrances with LuxeLane’s beauty edit. Our collection features luxurious formulas and iconic products from world-renowned brands, curated to elevate your self-care routine with elegance and indulgence.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Makeup</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Skincare</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Fragrances</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/jewel.jpg" alt="Step 3" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">03</div>
+                <h3>Jewelry & Watches</h3>
+                <p>Elevate every moment with our exquisite jewelry and luxury watches. Handcrafted to perfection, each piece is designed to add a touch of glamour and grace to your personal style.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Fine Jewelry</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Statement Pieces</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Luxury Watches</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Work Process Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/bg/bg.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>REMEMBER</h3>
+            <p>Complete your look with LuxeLane’s refined selection of accessories. Explore designer handbags, belts, scarves, and more — the perfect finishing touches that exude timeless charm and elegance.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Signature Collections</h2>
+        <p>Explore LuxeLane’s curated portfolio of premium fashion and beauty collections. Each piece reflects sophistication, elegance, and timeless luxury.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-beauty">beauty</li>
+            <li data-filter=".filter-jewelry">jewelry</li>
+            <li data-filter=".filter-fashion">fashion</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fashion">
+              <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fashion 1</h4>
+                <!-- <a href="assets/img/portfolio/2.jpg" title="fashion 1" data-gallery="portfolio-gallery-fashion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-beauty">
+              <img src="assets/img/portfolio/beauty.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Beauty 1</h4>
+                <!-- <a href="assets/img/portfolio/beauty.jpg" title="beauty 1" data-gallery="portfolio-gallery-beauty" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fashion">
+              <img src="assets/img/portfolio/fashion.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fashion</h4>
+                <!-- <a href="assets/img/portfolio/fashion.jpg" title="fashion " data-gallery="portfolio-gallery-fashion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-jewelry">
+              <img src="assets/img/portfolio/jewel.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Jewelry</h4>
+                <!-- <a href="assets/img/portfolio/jewel.jpg" title="jewelry" data-gallery="portfolio-gallery-jewelry" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+..              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-beauty">
+              <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Beauty</h4>
+                <!-- <a href="assets/img/portfolio/3.jpg" title="beauty " data-gallery="portfolio-gallery-beauty" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-beauty">
+              <img src="assets/img/portfolio/11.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Beauty</h4>
+                <!-- <a href="assets/img/portfolio/11.webp" title="beauty" data-gallery="portfolio-gallery-beauty" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-beauty">
+              <img src="assets/img/portfolio/6.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Beauty</h4>
+                <!-- <a href="assets/img/portfolio/6.webp" title="beauty " data-gallery="portfolio-gallery-beauty" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fashion">
+              <img src="assets/img/portfolio/bg.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fashion</h4>
+                <!-- <a href="assets/img/portfolio/bg.jpg" title="fashion" data-gallery="portfolio-gallery-fashion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fashion">
+              <img src="assets/img/portfolio/fashion1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fashion</h4>
+                <!-- <a href="assets/img/portfolio/fashion1.jpg" title="fashion" data-gallery="portfolio-gallery-fashion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-jewelry">
+              <img src="assets/img/portfolio/jewelry.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Jewelry</h4>
+                <!-- <a href="assets/img/portfolio/jewelry.jpg" title="jewelry" data-gallery="portfolio-gallery-jewelry" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reviews</h2>
+        <p>Our precious reviews from precious customers</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            { 
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
+                <h3>Aarushi M.,Nagpur</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Absolutely love LuxeLane! The quality is unmatched, and the delivery was super fast. I’ve never had such a smooth luxury shopping experience online!"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
+                <h3>Priya S., Delhi</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Their beauty collection is phenomenal. The packaging was elegant, and the product was 100% authentic. LuxeLane is now my go-to store for premium products.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/person/person-f-7.webp" class="testimonial-img" alt="">
+                <h3>Rhea K., Bangalore</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I ordered a designer handbag, and it’s just stunning! LuxeLane really delivers on their promise of luxury and authenticity."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/person/person-f-8.webp" class="testimonial-img" alt="">
+                <h3>Simran N.,Pune</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Excellent customer service and amazing selection of brands. LuxeLane made me feel like a VIP from start to finish.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/person/person-f-9.webp" class="testimonial-img" alt="">
+                <h3>Ananya V., Hyderabad</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Finally, a one-stop destination for luxury fashion and beauty in India. Loved the easy return process too!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+
+   </main> 
+
+
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-desc">We’d love to hear from you! Fill out the form below and our team will respond promptly.</p>
+    </div>
+
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-lg-4 mb-4">
+        <div class="contact-info">
+          <h5><i class="bi bi-geo-alt-fill"></i> Address</h5>
+          <p>Plot No. 24, Fifth Avenue,<br>Bandra Kurla Complex,<br>Mumbai, Maharashtra 400051</p>
+
+          <h5><i class="bi bi-envelope-fill"></i> Email</h5>
+          <p>support@luxelane.in</p>
+
+          <h5><i class="bi bi-telephone-fill"></i> Phone</h5>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8 mb-4">
+        <form class="contact-form p-4">
+          <div class="row mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Subject" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container mt-4">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.978840158413!2d72.84117337507834!3d19.066345382135336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90d4b7a2b0d%3A0xa8f6216cfb3c6ef!2sBandra%20Kurla%20Complex!5e0!3m2!1sen!2sin!4v1673896720000!5m2!1sen!2sin"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+</section>
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">LuxeLane</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>LuxeLane Headquarters Plot No. 24, Fifth Avenue, Bandra Kurla Complex, Mumbai, Maharashtra 400051, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9000 43210</span></p>
+            <p><strong>Email:</strong> <span>support@luxelane.in</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Beauty</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Fashion</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Jewelry & Watches</a></li>
+          </ul>
+        </div>
+<div class="col-lg-4 col-md-12">
+  <h4>Follow Us</h4>
+  <p>Get updates about our products</p>
+  <div class="social-links d-flex">
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-linkedin"></i></a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">LuxeLane</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
